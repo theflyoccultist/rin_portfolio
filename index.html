@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Rin Delahaije
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.icon-icons.com/icons2/3708/PNG/512/girl_female_woman_person_people_avatar_icon_230018.png"  class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Rin Delahaije! <img src="https://em-content.zobj.net/source/twitter/376/waving-hand_1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am an UX designer with a full stack developer expertise, I love designing softwares and seeing them come to life.
+            I have 2 years of experience and worked on various projects for big name companies, such as Google, CD Project and Apple.
+            Building mobile apps and interfaces for PC games is my speciality, and I have worked on various projects such as Google Weather, The Witcher and Apple Music.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/figma.png"/>
+            <h6>Figma</h6>
+            <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS3</h6>
+          <p>2 years experience</p>
+        </div>  
+
+      <div class="skill">
+        <img src="html_finalprojimages/C.png"/>
+        <h6>C</h6>
+        <p>1 year experience</p>
+    </div>  
+
+    <div class="skill">
+      <img src="html_finalprojimages/haskell.png"/>
+      <h6>Haskell</h6>
+      <p>1 year experience</p>
+  </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Google Weather</h3>
+            <ul>
+              <li>Based on usability studies that I have conducted, developped ann update for Google Weather - featuring more accessibility features.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>The Witcher</h3>
+            <ul>
+              <li>Worked with a team of developers to bring the game to life on the later stages of development.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Apple Music</h3>
+            <ul>
+              <li>Helped updating their music suggestion algorithm with the help of of the latest machine learning technologies.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Rin has come a long way from her beginnings withing our company.
+          She has now a great notion of teamwork and communication, 
+          learns quickly and has great left-field ideas that were in dire need in our projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Rin was a great experience and we will keep contact with her in the future. 
+          She isn't afraid to go out and lead some great usability studies that has been hugely appreciated.
+          For any future projects that need her expertise I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have worked with Rin on a new subtile and complex machine technology. 
+          I didn't really think anyone was up to task, but after some documentation she was truly able to pick up the pace!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation! Have a nice day.</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
